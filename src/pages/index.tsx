@@ -8,21 +8,19 @@ export default function Home() {
     <main
       className={` min-h-screen  ${inter.className}`}
     >
-         <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+      <header className="flex shadow-2xl border-b">
+      <a
+            className=" font-white text-[24px] lg:pointer-events-auto lg:p-2"
             href="/"
             target=""
             rel="noopener noreferrer"
           >
-            <Image
-              src="/geeky-net-logo.svg"
-              alt="Geeky Net Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+           GeekNets
+           <sub className="font-white text-[8px]"> One Stop FrontEnd Destination</sub>
           </a>
+        
+      </header>
+       
     </main>
   );
 }
